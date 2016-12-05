@@ -10,6 +10,9 @@ import { AboutComponent }  from './about/about.component';
 import { ContactComponent }  from './contact/contact.component';
 import { PortfolioComponent }  from './portfolio/portfolio.component';
 import { SliderComponent }  from './slider.component';
+import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 
@@ -17,7 +20,9 @@ import { SliderComponent }  from './slider.component';
     BrowserModule,
     HttpModule,
     RouterModule,
-    routes
+    routes,
+    FormsModule,
+    ReactiveFormsModule
   ],
 
   'declarations': [ 
@@ -27,7 +32,8 @@ import { SliderComponent }  from './slider.component';
     AboutComponent,
     ContactComponent,
     PortfolioComponent,
-    SliderComponent
+    SliderComponent,
+    ContactFormComponent
   ],
 
   'providers': [{
